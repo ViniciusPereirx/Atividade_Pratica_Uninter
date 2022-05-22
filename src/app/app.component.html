@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device -width, initial -scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="text text-center">
+        <!--Inserindo uma imagem através de um URL link-->
+        <img
+          src="https://i.ytimg.com/vi/spc90ESXZOk/maxresdefault.jpg"
+          width="400px"
+        />
+        <br />
+        <h3>ATIVIDADE PRÁTICA UNINTER</h3>
+        <h6><strong>Ferramentas de Desenvolvimento Web</strong></h6>
+      </div>
+      <!-- Criando uma tabela utilizando a biblioteca Bootstrap para mostrar os dados dos alunos mais organizados -->
+      <table class="table table-striped table-dark table-hover">
+        <thead>
+          <tr>
+            <th>ALUNO</th>
+            <th>RU</th>
+            <th>CURSOS</th>
+            <th>DATA DE NASCIMENTO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Utilizando o método ngFor para listar os dados dos alunos que estão sendo importados de um Array chamado "dados" criado no "app.component.ts" -->
+          <tr *ngFor="let alunos of dados">
+            <td>{{ alunos.name }}</td>
+            <td>{{ alunos.ru }}</td>
+            <td>{{ alunos.curso }}</td>
+            <td>{{ alunos.dn }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
