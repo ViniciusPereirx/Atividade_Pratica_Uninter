@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   dados: Array<any>;
   constructor() {
-    //Criando um método Constructor para passar dados dos alunos dentro um Array
+    //Criando um método Constructor para passar os dados dos alunos dentro um Array que será implementado no "app.component.ts"
     this.dados = [
       {
         name: 'VINICIUS PEREIRA',
